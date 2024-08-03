@@ -1,0 +1,3 @@
+```js
+javascript:(function()%7Bconst%20style%20%3D%20document.createElement('style')%3B%0Astyle.type%20%3D%20'text%2Fcss'%3B%0A%0Aconst%20css%20%3D%20%60%0A%40media%20print%20%7B%0A%20%20%5Bdata-turbo-body%5D%20%7B%20display%3A%20none%20!important%3B%20%7D%0A%7D%60%3B%0A%0Aif%20(style.styleSheet)%20%7B%0A%20%20style.styleSheet.cssText%20%3D%20css%3B%0A%7D%20else%20%7B%0A%20%20style.appendChild(document.createTextNode(css))%3B%0A%7D%0A%0Adocument.head.appendChild(style)%3B%0A%0Adocument.body.appendChild(document.querySelector('.markdown-body'))%3B%0A%0AsetTimeout(()%20%3D%3E%20%7B%0A%20%20print()%0A%7D%2C%201000)%3B%7D)()%3B
+```
